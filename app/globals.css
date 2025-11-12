@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+:root {
+  --neon-blue: #00f3ff;
+  --neon-orange: #ff6b00;
+  --dark-bg: #0a0a0a;
+  --card-bg: #1a1a1a;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue);
+}
+
+.neon-border {
+  border: 2px solid var(--neon-blue);
+  box-shadow: 0 0 10px var(--neon-blue), inset 0 0 10px var(--neon-blue);
+}
+
+.button-neon {
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-orange));
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.button-neon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-orange);
+}
+
+.button-neon:active {
+  transform: scale(0.98);
+}
